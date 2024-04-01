@@ -8,8 +8,8 @@ public class ArrayUtils {
      * @throws NullPointerException if x is null
      */
     // test: x = [2, 3, 5]; y = 2; Expected = 0
-    public static int findLast (int[] x, int y) {
-        for (int i=x.length-1; i >= 0; i--) {
+    public static int findLast(int[] x, int y) {
+        for (int i = x.length - 1; i >= 0; i--) {
             if (x[i] == y) {
                 return i;
             }
@@ -34,6 +34,7 @@ public class ArrayUtils {
         }
         return count;
     }
+}
 //
 //    public static int countOf(int[] x, int target) {
 //        int count = 0;
