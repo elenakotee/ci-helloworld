@@ -55,4 +55,14 @@ public class ArrayUtilsTest {
     public void testCountOfNonEmptyArray() {
         assertEquals(1, ArrayUtils.countOf(new int[] {2}, 2));
     }
+
+    @Test
+    public void testCountOfTwoElementsArray() {
+        assertEquals(1, ArrayUtils.countOf(new int[] {2, 3}, 2));
+    }
+
+    @Test
+    public void testCountOfReturnsZero() {
+        assertEquals(0, ArrayUtils.countOf(new int[] {2, 3}, 5));
+    }
 }
